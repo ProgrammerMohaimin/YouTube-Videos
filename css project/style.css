@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+  display: inline-block;
+  transition: all 1s ease-in-out;
+}
+.heading::before {
+  content: "";
+  height: 5px;
+  width: 50px;
+  color: red;
+  content: open-quote;
+  font-size: 3rem;
+}
+
+.heading::after {
+  display: flex;
+  height: 5px;
+  width: auto;
+  content: close-quote;
+  text-align: right;
+  font-size: 3rem;
+}
